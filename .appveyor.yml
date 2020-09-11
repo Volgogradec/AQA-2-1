@@ -1,4 +1,5 @@
-image: Ubuntu  # образ для сборки
+#image: Ubuntu  # образ для сборки
+image: Visual Studio 2019
 
 stack: jdk 11  # версия JDK
 

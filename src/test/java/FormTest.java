@@ -13,11 +13,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FormTest {
     private WebDriver driver;
-    private static String WebDriverPath = "C:\\Users\\Evdokimov\\";
 
     @BeforeAll
     static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", WebDriverPath + "webdriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "driver\\win\\chromedriver.exe");
     }
 
     @BeforeEach
@@ -85,7 +84,7 @@ public class FormTest {
         elements.get(0).sendKeys("Дмитрий Евдокимов");
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.className("button")).click();
-        String text = driver.findElement(By.className("input__sub")).getText();
+        String text = driver.findElement(By.cssSelector("[data-test-id=phone] span.input__sub")).getText();
         assertEquals("Поле обязательно для заполнения", text.trim());
     }
 

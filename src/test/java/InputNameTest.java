@@ -13,11 +13,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class InputNameTest {
     private WebDriver driver;
-    private static String WebDriverPath = "C:\\Users\\Evdokimov\\";
 
     @BeforeAll
     static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", WebDriverPath + "webdriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "driver\\win\\chromedriver.exe");
     }
 
     @BeforeEach

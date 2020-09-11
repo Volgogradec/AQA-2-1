@@ -1,5 +1,4 @@
-#image: Ubuntu  # образ для сборки
-image: Visual Studio 2019
+image: Ubuntu  # образ для сборки
 
 stack: jdk 11  # версия JDK
 
@@ -14,4 +13,5 @@ install:
   - java -jar ./artifacts/app-order.jar &
 
 build_script:
-  - ./gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
+  - chmod +x gradlew
+  - ./gradlew test --info # запускаем тест, флаг --info позволяет выводить больше информации

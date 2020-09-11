@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class InputNameTest {
     private WebDriver driver;
     private static String WebDriverPath = "C:\\Users\\Evdokimov\\";

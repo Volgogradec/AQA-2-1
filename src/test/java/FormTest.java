@@ -71,7 +71,6 @@ public class FormTest {
     void testNegativeNameEmpty() {
         driver.get("http://localhost:9999");
         List<WebElement> elements = driver.findElements(By.className("input__control"));
-//        elements.get(0).sendKeys("Дмитрий Евдокимов");
         elements.get(1).sendKeys("+79270000000");
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.className("button")).click();
@@ -80,7 +79,7 @@ public class FormTest {
     }
 
     @Test
-    void testNegativeTelephoneEmpty() {
+    void testNegativePhoneEmpty() {
         driver.get("http://localhost:9999");
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("Дмитрий Евдокимов");
